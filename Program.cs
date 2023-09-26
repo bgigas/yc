@@ -18,16 +18,16 @@ namespace ProgrammingLanguages
         where (q.Year > 1995 && q.Year < 2005)
         select $"'{q.Name}' was invented in {q.Year} and is based on {q.Predecessors}";
 
-      PrintAll(query);
+      PrintQuery(query);
     }
 
-    public static void PrettyPrintAll(IEnumerable<Language> languages) {
+    public static void PrintAll(IEnumerable<Language> languages) {
       foreach (var lang in languages) {
         Console.WriteLine(lang.Prettify());
       }
     }
 
-    public static void PrintAll(IEnumerable<Object> o) {
+    public static void PrintQuery(IEnumerable<Object> o) {
       foreach (var obj in o) {
         Console.WriteLine(obj);
       }
