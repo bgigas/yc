@@ -1,0 +1,17 @@
+@page
+@model PizzaModel
+<h1 class="text-center">YC Interview Pizza</h1>
+<br>
+<div class="card mx-auto" style="width: 18rem;">
+  <div class="card-body">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/df/Shopping_cart_icon.svg" class="card-img-top-center" alt="shop icon" style="width: 50px; height: 50px; margin: auto;">
+    <h4 class="card-title text-center">Confirm your order</h4>
+    <br>
+		<h5>Pizza for: @Model.Customer</h5>
+		<h5>Order: @Model.Order</h5>
+    <h5>Extra Cheese: @Model.ExtraCheese</h5>
+		<h5>Total: @Model.Total</h5>
+    <br>
+    <a href="#" class="btn btn-primary">Place Order</a>
+  </div>
+</div>
