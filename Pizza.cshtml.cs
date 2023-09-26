@@ -4,12 +4,9 @@ using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace starting_app.Pages
-{
-  public class PizzaModel : PageModel
-  {
-    public string PizzaTotal (string pizzaType)
-    {
+namespace starting_app.Pages {
+  public class PizzaModel : PageModel {
+    public string PizzaTotal (string pizzaType) {
       Dictionary<string, double> PizzaCost = new Dictionary<string, double>()
       {
         { "Cheese", 10 },
@@ -25,8 +22,7 @@ namespace starting_app.Pages
     public string Order {get; set;}
     public bool ExtraCheese {get; set;}
 
-    public void OnGet()
-    {
+    public void OnGet() {
       Customer = "Brant Gigas";
       Order = "Cheese";
       ExtraCheese = false;
