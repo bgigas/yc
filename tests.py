@@ -11,7 +11,7 @@ def factorial(num):
        call_stack.append({'input': num})
        print('call stack: ', call_stack)
        return num * factorial(num-1)
-print(factorial(20))
+#print(factorial(20))
 
 
 # Calculate dog years using a lambda
