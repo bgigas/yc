@@ -5,7 +5,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace starting_app.Pages {
+  
   public class PizzaModel : PageModel {
+    
     public string PizzaTotal (string pizzaType) {
       Dictionary<string, double> PizzaCost = new Dictionary<string, double>()
       {
